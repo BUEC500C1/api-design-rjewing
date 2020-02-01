@@ -1,4 +1,3 @@
-import requests
 import tweepy
 from config import Config
 
@@ -19,7 +18,7 @@ class Tweet():
             # checks if there is any media-entity
             if media.get("type", None) == "photo":
                 # checks if the entity is of the type "photo"
-                self.images.append({ "url": media["media_url"]} )
+                self.images.append({"url": media["media_url"]})
 
     def __repr__(self):
         return f'{{"user": {self.user}, "text": {self.text}, "media": {self.images}}}'
