@@ -26,4 +26,4 @@ class TwitterSummarizer(Resource):
                 image.update({"objects": objects})
                 print(image)
         tweets = [tweet.to_json() for tweet in tweets]
-        return jsonify(tweets)
+        return tweets
