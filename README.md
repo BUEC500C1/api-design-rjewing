@@ -27,7 +27,7 @@ flask run
 ## Testing
 We can test the API using curl:
 ```
-curl http://155.41.14.49:5000/summary?user=elonmusk
+curl http://localhost:5000/summary?user=elonmusk
 ```
 
 Or by running unit tests:
